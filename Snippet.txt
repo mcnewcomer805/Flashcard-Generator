@@ -1,0 +1,16 @@
+var Cloze = require("./ClozeCard.js");
+
+// constructor function for creating classroom objects
+var Classroom = function(profName, roomNum) {
+  // this.students will hold all of our student objects
+  this.cloze = [];
+  this.profName = profName;
+  this.roomNum = roomNum;
+  // a method that creates a student using our Student constructor.
+  // It then pushes the new student object to this.students and updates this.numStudents
+  this.addCloze = function(George Washington, Thomas, Abraham) {
+    this.cloze.push(new Cloze(George Washington, Thomas, Abraham));
+  };
+
+// exporting our ClozeCard constructor. We will require it in main.js
+module.exports = ClozeCard;
