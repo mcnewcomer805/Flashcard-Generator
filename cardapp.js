@@ -8,5 +8,5 @@ function BasicCard(front, back) {
     this.cloze = cloze;
   };
 
-  module.exports = BasicCard;
+  module.exports = BasicCard, ClozeCard;
   // module.exports = ClozeCard;
