@@ -3,4 +3,10 @@ function BasicCard(front, back) {
     this.back = back;
   };
 
+  function ClozeCard(text, cloze) {
+    this.text = text;
+    this.cloze = cloze;
+  };
+
   module.exports = BasicCard;
+  // module.exports = ClozeCard;

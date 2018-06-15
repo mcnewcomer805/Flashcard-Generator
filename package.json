@@ -5,7 +5,8 @@
   "main": "BasicCard.js",
   "dependencies": {
     "inquirer": "^6.0.0",
-    "request": "^2.87.0"
+    "request": "^2.87.0",
+    "require": "^2.4.20"
   },
   "devDependencies": {},
   "scripts": {

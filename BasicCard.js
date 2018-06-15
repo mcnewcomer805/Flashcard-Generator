@@ -24,7 +24,7 @@ function start() {
     {
       type: "list",
       name: "nodeReviewQ1",
-      message: frontOne.front,
+      message: "Please select a flashcard to see the answer.",
       choices: [
         // "Which color can you color the sky with?",
         // "Which color can you color the grass with?",
@@ -35,20 +35,56 @@ function start() {
         // "Which color can you color the snow with?",
         // "Which color can you color the dolphin with?",
         // "Which color can you color the tire with?"
-        frontOne,
-        frontTwo   
-      
-      
+        frontOne.front,
+        frontTwo.front,
+        frontThree.front,
+        frontFour.front,
+        frontFive.front,
+        frontSix.front,
+        frontSeven.front,
+        frontEight.front,
+        frontNine.front  
       ]
     }
   ]).then(function(response) {
-    console.log(frontOne.back)
+    // console.log(frontOne.back)
     switch (response.nodeReviewQ1) {
       case frontOne.front:
       console.log(frontOne.back);
       start();
       break;
-
+      case frontTwo.front:
+      console.log (frontTwo.back);
+      start();
+      break;
+      case frontThree.front:
+      console.log (frontThree.back);
+      start();
+      break;
+      case frontFour.front:
+      console.log (frontFour.back);
+      start();
+      break;
+      case frontFive.front:
+      console.log (frontFive.back);
+      start();
+      break;
+      case frontSix.front:
+      console.log (frontSix.back);
+      start();
+      break;
+      case frontSeven.front:
+      console.log (frontSeven.back);
+      start();
+      break;
+      case frontEight.front:
+      console.log (frontEight.back);
+      start();
+      break;
+      case frontNine.front:
+      console.log (frontNine.back);
+      start();
+      break;
     }
   })
 }
